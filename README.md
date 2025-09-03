@@ -1,1 +1,1 @@
-# loading
+# Yükleme Ekranı / Loading Page
