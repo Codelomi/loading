@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CodeLomi | Yükleniyor...</title>
+  <link rel="icon" href="1codelomi.png" type="image/png">
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      font-family: "Segoe UI", sans-serif;
+      overflow: hidden;
+    }
+
+    .loader {
+      text-align: center;
+      color: #fff;
+      animation: fadeIn 1.2s ease forwards;
+    }
+
+    .logo {
+      font-size: 2.5rem;
+      font-weight: bold;
+      letter-spacing: 2px;
+      background: linear-gradient(90deg, #00c6ff, #0072ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: pulse 1.5s infinite;
+    }
+
+    .subtitle {
+      font-size: 1.2rem;
+      margin-top: 15px;
+      color: #ddd;
+      animation: fadeInUp 1.2s ease forwards;
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: scale(0.9);}
+      100% { opacity: 1; transform: scale(1);}
+    }
+
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(20px);}
+      100% { opacity: 1; transform: translateY(0);}
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
+  </style>
+  <script>
+    // 3 saniye sonra yönlendirme
+    setTimeout(() => {
+      window.location.href = "https://codelomi.github.io/codelomi/index.html";
+    }, 3000);
+  </script>
+</head>
+<body>
+  <div class="loader">
+    <div class="logo">CodeLomi</div>
+    <div class="subtitle">Gelecek Kodla Başlar...</div>
+  </div>
+</body>
+</html>
